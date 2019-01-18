@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		
+	</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function minArray(arr) {
+		    var min = arr[0];
+		    for(var i = 1; i < arr.length; i++){
+		        if(arr[i] < min){
+		            min = arr[i];
+		        }
+		    }
+		    return min;
+		}
+		var arr=[3, 5, 1, 8, -3, 7, 8];
+		var minArray=minArray(arr);
+		document.write(minArray);
+		// th3 2
+		function minArrayy(arrr) {
+		    if(arrr.length == 0)
+		        return -1;
+		    var min = arrr[0];
+
+		    for(var i = 1; i < arrr.length; i++){
+		        if(arrr[i] < min){
+		            min = arrr[i];
+		        }
+		    }
+		    return min;
+		}
+		var arrr=[];
+		var minArrayy=minArrayy(arrr);
+		document.write(minArrayy);
+
+	</script>
+
+</body>
+</html>

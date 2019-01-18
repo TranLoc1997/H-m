@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+<body>
+   <p>
+  <label>Nhập Số</label>
+  <input id="inputBinhPhuong" type="number" placeholder="Nhập Số"
+  oninput="binhPhuong(this.value)"
+  onchange="binhPhuong(this.value)">
+</p>
+<p>Tính Bình Phương: <span id="outputCelsius"></span></p>
+ <script type="text/javascript">
+   function binhPhuong(valNum) {
+     valNum = parseFloat(valNum);
+     document.getElementById("outputCelsius").innerHTML = (valNum*valNum);
+   }
+ </script>
+
+</body>
+</html>

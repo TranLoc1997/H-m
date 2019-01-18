@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <title></title>
+</head>
+<body>
+   <p>
+  <label>Chuvi</label>
+  <input id="inputchivi" type="number" placeholder="Nhập Số"
+  oninput="Chuvi(this.value)"
+  onchange="Chuvi(this.value)">
+</p>
+<p>Chu Vi Là: <span id="outputChuvi"></span></p>
+ <script type="text/javascript">
+   function Chuvi(valNum) {
+     valNum = parseFloat(valNum);
+     document.getElementById("outputChuvi").innerHTML = valNum*2*3.14;
+   }
+ </script>
+ //
+ <p>
+  <label>DienTich</label>
+  <input id="inputDienThic" type="number" placeholder="Nhập Số"
+  oninput="DienTich(this.value)"
+  onchange="DienTich(this.value)">
+</p>
+<p>Dien Tích Là: <span id="outputdientich"></span></p>
+ <script type="text/javascript">
+   function DienTich(valNum) {
+     valNum = parseFloat(valNum);
+     document.getElementById("outputdientich").innerHTML = (valNum*valNum)*3.14;
+   }
+ </script>
+
+</body>
+</html>
